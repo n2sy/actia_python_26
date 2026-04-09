@@ -1,54 +1,21 @@
-s = """nidhal en
-python"""
-print(ord("a"))
-print(chr(97))
-print(len(s))
+sample_story = """Once upon a time, there was a beginner programmer named Alice who was eager to learn Python. She tried to learn from books, but found it difficult to grasp the concepts. One day, she stumbled upon an online course.
 
-s1 = "actia"
-s2 = " es "
-print((s1 + s2) * 3)
-print(s1.index("tia"))
-print(s1.find("t", 4))
-print(s1.rfind("t", 2, 5))
+Alice was thrilled. The course was taught by a well-known programmer who made the lessons interesting and easy to understand. The course covered everything a beginner programmer needed, and Alice was finally able to understand how to code in Python."""
 
-s3 = "abc"
-s4 = "1234a"
-print(s3.isalpha())
-print(s3.isalnum())
-print(s4.isdigit())
-s5 = "\t"
-print(s5.isspace())
+print(len("interesting"))
 
-s6 = "-abc-"
-print(s6.isupper())
-print(s6.islower())
 
-print(s6.join(["xxx", "ccc", "vvv"]))
+def count_longest_word(text):
+    text = text.replace(",", " ").replace(".", " ")
+    words = text.split()
+    # nbMax = 0
+    longest_word = ""
+    for word in words:
+        print(word)
+        if len(word) > len(longest_word):
+            longest_word = word
 
-s7 = "formation python:actia -- python"
-print(s7.split(":"))
+    return longest_word
 
-s7 = s7.replace("python", "ruby")
-print(s7)
 
-print(sorted("txpnez"))
-
-print(ord("e"))
-print(ord("z"))
-if "e" < "z":
-    print("Supérieur")
-else:
-    print("Inférieur")
-
-print(sorted(["tgv", "ert", "zsw"]))
-print("******************")
-s9 = "txpnez"
-print(sorted(s9))
-print(s9)
-l = ["wsx", "bgggg", "abc"]
-sorted(l)
-print(l)
-
-print(float("4.15"))
-
-print("abc".rfind("z"))
+print(count_longest_word(sample_story))
