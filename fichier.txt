@@ -1,0 +1,3 @@
+Il existe en Python le mot-clé with qui permet d’ouvrir et de fermer un fichier de manière efficace. Si pour une raison ou une autre l’ouverture ou la lecture du fichier conduit à une erreur, l’utilisation de with garantit la bonne fermeture du fichier.
+L’instruction with introduit un bloc d’indentation. C’est à l’intérieur de ce bloc que nous effectuons toutes les opérations sur le fichier. 
+Une fois sorti du bloc d’indentation, Python fermera automatiquement le fichier. Vous n’avez donc plus besoin d’utiliser la méthode close.
